@@ -1,8 +1,10 @@
 #include <stdio.h>
 
 /**
- * Prints allsingle numbers
- * base ten from 0
+ * main -Entry point
+ * Description: prints allsingle digit numbers of
+ * base 10 from 0
+ * Return: Always 0 (success)
  */
 
 int main(void)
