@@ -1,17 +1,22 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * main - entry point
- *
- * Return: 0 (success)
- *
+ * main - Entry point
+ * Description: prints 'Holberton \n'
+ * Return: Always 0 (success)
  */
 
 int main(void)
 {
-	char hello[9] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\0'};
+char str[] = "Holberton\n";
+int i = 0;
 
-	printf("%s\n", hello);
+while (str[i] != '\0')
+	{
+	char c = str[i];
 
-	return (0);
+	_putchar(c);
+	i++;
+	}
+return (0);
 }
