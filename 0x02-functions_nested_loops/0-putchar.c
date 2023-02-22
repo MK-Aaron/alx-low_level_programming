@@ -18,5 +18,5 @@ while (str[i] != '\0')
 	_putchar(c);
 	i++;
 	}
-return (0);
+return (0)
 }
