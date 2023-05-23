@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * add - addition 
+ * add - addition
  * @a: arguement1
  * @b: arguement2
  *
