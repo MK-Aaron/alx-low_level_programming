@@ -3,7 +3,7 @@
 
 /**
  * print_times_table -  n times table
- * @n: n timestable
+ * @n: 0 - 15  timestable
  *
  * Return: NULL
  */
