@@ -12,7 +12,7 @@ int main(void)
 	long int next = 0, tmp = 1, tmp2 = 2;
 
 	printf("1, 2");
-	for (i = 0; i <= 50; i++)
+	for (i = 3; i <= 50; i++)
 	{
 		next = tmp2 + tmp;
 		tmp = tmp2;
