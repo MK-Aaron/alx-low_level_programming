@@ -12,19 +12,22 @@ void print_diagonal(int n)
 {
 	int i, j;
 
-	i = 0;
-	while (n > i)
+	if (n <= 0)
+		_putchar('\n');
+	else
 	{
-		j = 0;
-		while (j < i)
+		i = 0;
+		while (n > i)
 		{
-			_putchar(' ');
-			j++;
-		}
-		_putchar('\\');
-		_putchar('\n');
-		i++;
+			j = 0;
+			while (j < i)
+			{
+				_putchar(' ');
+				j++;
+			}
+			_putchar('\\');
+			_putchar('\n');
+			i++;
 	}
-	if (n <= 0 )
-		_putchar('\n');
+	}
 }
