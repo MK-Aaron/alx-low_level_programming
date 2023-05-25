@@ -12,23 +12,18 @@ void print_line(int n)
 {
 	int i;
 
-	/* Checks if n is a digit */
-	if (!(_isdigit(n)))
+	if (n <= 0)
 	{
-		if (n <= 0)
+		_putchar('\n');
+	}
+	else if (n > 0)
+	{
+		i = 0;
+		while (i <= n)
 		{
-			_putchar('\n');
+			_putchar('_');
+			i++;
 		}
-		else if (n > 0)
-		{
-			i = 0;
-			while (i <= n)
-			{
-				_putchar('_');
-				i++;
-			}
-			_putchar('\n');
-		}
+		_putchar('\n');
 	}
 }
-
