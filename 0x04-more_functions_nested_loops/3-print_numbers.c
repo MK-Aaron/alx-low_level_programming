@@ -4,7 +4,7 @@
 /**
  * print_numbers - print single digits
  *
- * Retrun: 0
+ * Retrun: Null
  */
 
 void print_numbers(void)
