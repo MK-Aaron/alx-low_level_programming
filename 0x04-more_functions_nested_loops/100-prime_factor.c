@@ -11,7 +11,7 @@ int main(void)
 	int i;
 	long n = 612852475143, next;
 
-	for (i = 2; 1 != n; i++)
+	for (i = 2; n != 1; i++)
 	{
 		while (n % i == 0)
 		{
