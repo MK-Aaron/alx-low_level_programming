@@ -18,7 +18,8 @@ void puts2(char *str)
 	}
 
 	j = 0;
-	while (j != i / 2)
+	i -= 1;
+	while (j != i)
 	{
 		_putchar(str[j]);
 		j += 2;
