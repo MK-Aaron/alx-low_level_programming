@@ -6,4 +6,5 @@
 
 [2-strlen.c](./2-strlen.c): A function that returns the length of a string.
 
+[3-puts.c](./3-puts.c): A function that prints a string, followed by a new line, to `stdout`.
 
