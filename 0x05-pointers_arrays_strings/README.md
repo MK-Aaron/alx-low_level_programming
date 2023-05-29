@@ -12,4 +12,6 @@
 
 [5-rev_string.c](./5-rev_string.c): A function that reverses a string.
 
+[6-puts2.c](./6-puts2.c): A function that prints every other character of a string, starting with the first character, followed by a new line.
+
 
