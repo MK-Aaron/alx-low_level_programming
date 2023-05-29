@@ -18,4 +18,6 @@
 
 [8-print_array.c](./8-print_array.c): A function that prints `n` elements of an array of integers, followed by a new line.
 
+[9-strcpy.c](./9-strcpy.c): A function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest.
+
 
