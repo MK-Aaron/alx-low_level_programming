@@ -20,4 +20,6 @@
 
 [9-strcpy.c](./9-strcpy.c): A function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest.
 
+[100-atoi.c](./100-atoi.c): A function that convert a string to an integer.
+
 
