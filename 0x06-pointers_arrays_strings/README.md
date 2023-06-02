@@ -10,4 +10,6 @@
 
 [5-string_toupper.c](./5-string_toupper.c): A function that changes all lowercase letters of a string to uppercase.
 
+[6-cap_string.c](./6-cap_string.c): A function that capitalizes all words of a string.
+
 
