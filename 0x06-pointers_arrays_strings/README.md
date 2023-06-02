@@ -6,4 +6,6 @@
 
 [3-strcmp.c](./3-strcmp.c): A function that compares two strings.
 
+[4-rev_array.c](./4-rev_array.c): A function that reverses the content of an array of integers.
+
 
