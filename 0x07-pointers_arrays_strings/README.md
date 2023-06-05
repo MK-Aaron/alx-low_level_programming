@@ -8,4 +8,6 @@
 
 [3-strspn.c](./3-strspn.c): A function that gets the length of a prefix substring.
 
+[4-strpbrk.c](./4-strpbrk.c): A function that searches a string for any of a set of bytes.
+
 
