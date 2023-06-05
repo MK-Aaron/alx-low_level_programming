@@ -12,4 +12,6 @@
 
 [6-cap_string.c](./6-cap_string.c): A function that capitalizes all words of a string.
 
+[7-leet.c](./7-leet.c): A function that encodes a string into `1337`.
+
 
