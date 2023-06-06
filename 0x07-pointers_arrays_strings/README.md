@@ -12,4 +12,6 @@
 
 [5-strstr.c](./5-strstr.c): A function that locates a substring.
 
+[7-print_chessboard.c](./7-print_chessboard.c): A function that prints the chessboard.
+
 
