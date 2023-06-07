@@ -6,4 +6,4 @@
 
 [2-strlen_recursion.c](./2-strlen_recursion.c): A function that returns the length of a string.
 
-
+[3-factorial.c](./3-factorial.c): A function that returns the factorial of a given number.
