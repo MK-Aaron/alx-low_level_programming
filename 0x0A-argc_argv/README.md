@@ -17,7 +17,7 @@
 - :x: Print the result, followed by a new line.
 - :x: If no number is passed to the program, print `0`, followed by a new line.
 - :x: If one of the number contains symbols that are not digits, print `Error`, followed by a new line, and return `1`.
-- ;x: You can assume that numbers and the addition of all the numbers can be stored in an int.
+- :x: You can assume that numbers and the addition of all the numbers can be stored in an int.
 
 [100-change.c](./100-change.c): A program that prints the minimum number of coins to make change for an amount of money.
 
