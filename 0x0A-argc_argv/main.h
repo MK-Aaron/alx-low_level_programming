@@ -3,4 +3,4 @@
 
 int _putchar(char c);
 
-#ifndef /* Header File */
+#endif /* Header File */
