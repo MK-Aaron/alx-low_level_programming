@@ -63,7 +63,7 @@
 [100-empty_casks](./100-empty_casks): A command that finds all empty files and directories in the current directory and all sub-directories.
 
 - :x: Only the names of the files and directories should be displayed (not the entire path)
-- :X: Hidden files should be listed
+- :x: Hidden files should be listed
 - :x: One file name per line
 - :x: The listing should end with a new line
 - :x: You are not allowed to use `basename`, `grep,` `egrep`, `fgrep` or `rgrep`
