@@ -27,6 +27,7 @@ int main(int argc, char *argv[])
 	if (num < 0)
 	{
 		printf("0\n");
+
 	}
 	else
 	{
@@ -39,9 +40,9 @@ int main(int argc, char *argv[])
 				num -= cents[i];
 			}
 		}
+		/* Prints the number of coins */
+		printf("%d\n", count);
 	}
-	/* Prints the number of coins */
-	printf("%d\n", count);
 
 	return (0);
 }
