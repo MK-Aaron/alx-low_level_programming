@@ -19,7 +19,7 @@ char *create_array(unsigned int size, char c)
 
 	if (ptr == NULL)
 	{
-		printf("failed to allocate memory");
+		printf("failed to allocate memory\n");
 	}
 
 	else
