@@ -15,4 +15,15 @@
 
 - :x: FYI: The standard library provides a similar function: `strdup`. Run `man strdup` to learn more.
 
+[2-str_concat.c](./2-str_concat.c): A function that concatenates two strings.
 
+- :x: Prototype: `char *str_concat(char *s1, char *s2);`
+- :x: The returned pointer should point to a newly allocated space in memory which contains the contents of `s1`, followed by the contents of `s2`, and null terminated
+- :x: if `NULL` is passed, treat it as an empty string
+- :x: The function should return `NULL` on failure
+
+
+
+<hr>
+
+### ©ALXPROGRAM
