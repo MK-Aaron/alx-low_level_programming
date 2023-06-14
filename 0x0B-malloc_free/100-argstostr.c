@@ -22,7 +22,7 @@ char *argstostr(int ac, char **av)
 		totallen = totallen + strlen(av[i]) + 1;
 	}
 
-	token = malloc(sizeof(char) * (totallen));
+	token = malloc(sizeof(char) * (totallen + 1));
 
 	if (token == NULL)
 		return (NULL);
