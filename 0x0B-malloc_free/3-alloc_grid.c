@@ -1,6 +1,31 @@
 #include <stdlib.h>
 
 /**
+ * free_all - frees memory
+ * @ptr: 2d pointers
+ * @width: rows of arrays
+ * @height: columns of array
+ */
+
+void free_all(int **ptr, int width, int height)
+{
+	int i, j;
+
+	i = 0;
+	while (i < height)
+	{
+		j = 0;
+		while (j < width)
+		{
+			free(ptr[j]);
+			j++;
+		}
+		i++;
+	}
+	free(ptr);
+}
+
+/**
  * alloc_grid - 2d array
  * @width: width
  * @height: height
@@ -28,8 +53,7 @@ int **alloc_grid(int width, int height)
 
 		if (ptr[i] == NULL)
 		{
-			free(ptr);
-			/*free_all(ptr, width, height);*/
+			free_all(ptr, width, height);
 			return (NULL);
 		}
 
