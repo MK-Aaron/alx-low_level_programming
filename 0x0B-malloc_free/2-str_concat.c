@@ -13,6 +13,7 @@ char *str_concat(char *s1, char *s2)
 	int i, j, totallen, len1, len2;
 	char *ptr;
 
+	len1 = len2 = 1;
 	if (s1 == NULL || s2 == NULL)
 	{
 		if (s1 == NULL)
