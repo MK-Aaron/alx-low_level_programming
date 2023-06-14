@@ -13,12 +13,21 @@ char *str_concat(char *s1, char *s2)
 	int i, j, totallen, len1, len2;
 	char *ptr;
 
-	len1 = strlen(s1);
-	len2 = strlen(s2);
-	
+	if (s1 == NULL || s2 == NULL)
+	{
+		if (s1 == NULL)
+			len1  = 0;
+		else
+			len2 = 0;
+	}
+	else
+	{
+		len1 = strlen(s1);
+		len2 = strlen(s2);
+	}
 	totallen = len1 + len2;
 
-	ptr = malloc(sizeof(char) *(totallen + 1));
+	ptr = malloc(sizeof(char) * (totallen + 1));
 
 	if (ptr == NULL)
 		return (NULL);
