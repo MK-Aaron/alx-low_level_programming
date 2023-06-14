@@ -6,14 +6,12 @@
  * @height: rows of the array
  */
 
-void free_grid(int **grid, int height __attribute__((unused)))
+void free_grid(int **grid, int height)
 {
 	int i;
 
-	if (grid == NULL)
-		grid = 0;;
 
-	for (i = 0; *(grid + i); i++)
+	for (i = 0; i < height; i++)
 		free(grid[i]);
 	free(grid);
 }
