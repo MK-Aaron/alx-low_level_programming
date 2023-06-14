@@ -11,7 +11,7 @@ void free_grid(int **grid, int height __attribute__((unused)))
 	int i;
 
 	if (grid == NULL)
-		free(grid);
+		grid = 0;;
 
 	for (i = 0; *(grid + i); i++)
 		free(grid[i]);
