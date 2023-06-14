@@ -22,8 +22,10 @@ char *str_concat(char *s1, char *s2)
 	}
 	else
 	{
-		len1 = strlen(s1);
-		len2 = strlen(s2);
+		if (len1 != 0)
+			len1 = strlen(s1);
+		if (len2 != 0)
+			len2 = strlen(s2);
 	}
 	totallen = len1 + len2;
 
