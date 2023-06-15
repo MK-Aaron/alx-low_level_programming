@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * concatenates two strings - concatenates two strings
+ * string_nconcat - concatenates two strings
  * @s1: string to concatenate
  * @s2: concatenating string
  * @n: number of bytes to concatenate
@@ -15,7 +15,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *ptr;
 
 	if (s1 == NULL)
-		s1= "";
+		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
 
