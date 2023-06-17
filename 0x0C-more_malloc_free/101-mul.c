@@ -27,7 +27,7 @@ int breakdown(int ac, char *av[])
 				continue;
 			else
 			{
-				printf("Error2\n");
+				printf("Error\n");
 				exit(98);
 			}
 		}
