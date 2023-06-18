@@ -78,12 +78,12 @@ char **strtow(char *str)
 	len = space(str);
 	if (len == 0)
 		return (NULL);
-	sub_str = malloc(sizeof(char) * len);
+	sub_str = malloc(sizeof(char) * (len + 1));
 	if (sub_str == NULL)
 		return (NULL);
 
 	l = k = 0;
-	for (i = 0; i < str[i]; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (ptr[i] == ' ')
 			continue;
@@ -92,7 +92,7 @@ char **strtow(char *str)
 			if (ptr[i] == ' ')
 			{
 				i -= j;
-				sub_str[k] = malloc(sizeof(char) * j);
+				sub_str[k] = malloc(sizeof(char) * (j + 1));
 
 				if (sub_str[k] == NULL)
 				{
