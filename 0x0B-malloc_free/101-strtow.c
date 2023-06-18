@@ -78,7 +78,6 @@ char **strtow(char *str)
 	len = space(str);
 	if (len == 0)
 		return (NULL);
-
 	sub_str = malloc(sizeof(char) * len);
 	if (sub_str == NULL)
 		return (NULL);
