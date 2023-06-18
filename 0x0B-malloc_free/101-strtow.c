@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
 
 /**
@@ -27,6 +28,40 @@ void free_all(char **ptr, int width, int height)
 }
 
 /**
+ * space - checks for len of strings ommiting spaces
+ * @str: string to be counted
+ * Return: len of characters omiting space
+ */
+
+int space(char *str)
+{
+	int i, j, k, len, totallen;
+
+	j = len = k = totallen = 0;
+
+
+	len = strlen(str);
+
+	for (i = 0; i < len; i++)
+	{
+		if (str[i] == ' ')
+			continue;
+		for (j = 0; ; j++)
+		{
+			if (str[i] == ' ')
+			{
+				totallen += j;
+				break;
+			}
+			i++;
+		}
+		k++;
+	}
+
+	return (totallen);
+}
+
+/**
  * strtow - splits strings into sub-strings
  * @str: string to be sub-divided
  * Return: String containin sub-strings
@@ -34,22 +69,22 @@ void free_all(char **ptr, int width, int height)
 
 char **strtow(char *str)
 {
-	int i, j, k, l, len;
-	char **sub_str;
-	char *ptr = str;
-
-	j = len = k = 0;
+	int len, i, l, k, j;
+	char **sub_str, *ptr = str;
 
 	if (str == NULL)
 		return (NULL);
 
-	len = strlen(str);
-
-	sub_str = malloc(sizeof(char) * (len + 1));
-	if (sub_str == NULL)/* Checks if space was allocated */
+	len = space(str);
+	if (len == 0)
 		return (NULL);
 
-	for (i = 0; i < len; i++)
+	sub_str = malloc(sizeof(char) * len);
+	if (sub_str == NULL)
+		return (NULL);
+
+	l = k = 0;
+	for (i = 0; i < str[i]; i++)
 	{
 		if (ptr[i] == ' ')
 			continue;
@@ -73,5 +108,6 @@ char **strtow(char *str)
 		}
 		k++;
 	}
+	sub_str[k] = '\0';
 	return (sub_str);
 }
