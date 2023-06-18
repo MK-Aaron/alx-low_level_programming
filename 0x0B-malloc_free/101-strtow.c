@@ -78,7 +78,7 @@ char **strtow(char *str)
 	len = space(str);
 	if (len == 0)
 		return (NULL);
-	sub_str = malloc(sizeof(char) * (len + 1));
+	sub_str = malloc(sizeof(char) * len);
 	if (sub_str == NULL)
 		return (NULL);
 
@@ -92,7 +92,7 @@ char **strtow(char *str)
 			if (ptr[i] == ' ')
 			{
 				i -= j;
-				sub_str[k] = malloc(sizeof(char) * (j + 1));
+				sub_str[k] = malloc(sizeof(char) * j);
 
 				if (sub_str[k] == NULL)
 				{
