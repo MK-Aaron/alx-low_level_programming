@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 
 	while ((i < number_of_bytes && (c = getc(fp)) != EOF))
 	{
-		printf("%2x", c);
+		printf("%02hhx", c);
 
 		if (i < number_of_bytes - 1)
 			printf(" ");
