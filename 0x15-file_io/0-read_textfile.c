@@ -31,7 +31,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	able = read(fd, buff, letters);
 	/* Check error */
 	if (!able)
+	{
+		free(buff);
 		return (0);
+	}
 
 	out = write(STDOUT_FILENO, buff, able);
 
