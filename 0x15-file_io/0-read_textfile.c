@@ -11,7 +11,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	size_t able, out;
+	ssize_t able, out;
 	int fd;
 	char *buff;
 
@@ -30,7 +30,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	able = read(fd, buff, letters);
 	/* Check error */
-	if (!able)
+	if (able == -1)
 	{
 		free(buff);
 		return (0);
@@ -38,7 +38,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	out = write(STDOUT_FILENO, buff, able);
 	/* Check if write executes */
-	if (!out)
+	if (!out || out != able)
 	{
 		free(buff);
 		return (0);
