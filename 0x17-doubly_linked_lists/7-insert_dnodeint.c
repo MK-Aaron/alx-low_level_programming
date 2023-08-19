@@ -32,8 +32,10 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		*h = new_node;
 	}
 
-	while (tmp != NULL && i < idx)
+	while (i < idx - 1)
 	{
+		if (tmp == NULL)
+			return (NULL);
 		tmp = tmp->next;
 		i++;
 	}
