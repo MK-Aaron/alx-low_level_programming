@@ -2,6 +2,25 @@
 #include "lists.h"
 
 /**
+ * dlistint_len - Return number of elements in a linked list
+ * @h: Pointer to first node
+ * Return: number of elements
+ */
+
+size_t dlistint_len(const dlistint_t *h)
+{
+	int nod = 0;
+
+	while (h != NULL)
+	{
+		nod++;
+		h = h->next;
+	}
+
+	return (nod);
+}
+
+/**
  * insert_dnodeint_at_index - insert a node at a given position
  * @h: pointer to pointer of first node
  * @idx: index of new node where it should be added
@@ -15,6 +34,8 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	dlistint_t *tmp = *h;
 	dlistint_t *new;
 
+	if (idx > (dlistint_len(*h)))
+		return (NULL);
 	new = malloc(sizeof(dlistint_t));
 	if (new == NULL)
 		return (NULL);
