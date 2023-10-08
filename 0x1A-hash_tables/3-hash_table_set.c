@@ -2,11 +2,12 @@
 #include <string.h>
 #include "hash_tables.h"
 
-/***
+/**
  * hash_table_set - adds an element to a hash table
  * @ht: Hash table to add value to
  * @key: is the key. It can not be empty
- * Return 1 success || 0 fail
+ * @value: value associated with the key
+ * Return: 1 success || 0 fail
  */
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
